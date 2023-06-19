@@ -1,0 +1,165 @@
+body {
+  background-image: url("bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 5px #ffa07a; 
+  color: #ffa07a; 
+}
+
+.name {
+  font-size: 18px;
+  margin-top: auto;
+  text-align: center;
+  color: #ffe4e1;
+  text-shadow: 0 0 2px #db7093, 0 0 3px #0000FF;
+}
+
+.my-paragraph {
+  text-indent: 50px;
+  text-align: justify;
+  color: #db7093;
+  font-size: 18px;
+}
+
+.image {
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+h2 {
+  color: #ffa07a;
+  margin-bottom: 15px;
+}
+
+h3{
+	color: #b0c4d4;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.section {
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #cd853f;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.zebra-row:nth-child(even) {
+  background-color: #e0ffff;
+}
+
+.zebra-row:nth-child(odd) {
+  background-color: #fff0f5;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+  color: #191970;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #dda0dd;
+  
+}
+
+.a{
+  color: #cd5c5c;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: #d2b48c;
+  font-weight: bold;
+  line-height: 2;
+}
+
+span.highlight {
+  color: red;
+  font-weight: bold;
+}
+	
+.link-list {
+  margin-top: 20px;
+}
+
+.link-list ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul.b{
+  list-style-type:disc;
+}
+
+ul.c{
+	list-style-type: square;
+}
+
+.quote {
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+.name {
+  animation: floating 2s infinite;
+}
+
+@keyframes shining {
+  0% { color: #ffffff; }
+  50% { color: #fa8072; }
+  100% { color: #ff0000; }
+}
+
+.highlight {
+  animation: shining 3s infinite;
+  color: red;
+  font-weight: bold;
+}
